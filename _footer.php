@@ -41,7 +41,7 @@ function render_footer($current_page = "Home")
           }
           ?>
           <li class="nav-item">
-            <a href="<?php echo $menu["link"] ?>" class="nav-link px-2 <?php echo implode($classes, " "); ?>">
+            <a href="<?php echo $menu["link"] ?>" class="nav-link px-2 <?php echo implode(" ", $classes); ?>">
               <?php echo $menu["label"]; ?>
             </a>
           </li>
