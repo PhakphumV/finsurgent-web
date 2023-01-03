@@ -10,7 +10,7 @@
   <?php render_header("STOCK"); ?>
 
   <div class="container text-center">
-    <div id="stock-gridview" class="row row-cols-5">
+    <div id="stock-gridview" class="row row-cols-5 g-0">
       <?php
       // Connecting to DB
 
