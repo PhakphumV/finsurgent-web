@@ -10,7 +10,7 @@
   <?php render_header("STOCK"); ?>
 
   <div class="container text-center">
-    <div class="row row-cols-5">
+    <div id="stock-gridview" class="row row-cols-5">
       <?php
       // Connecting to DB
 
@@ -34,13 +34,11 @@
         while ($row = mysqli_fetch_assoc($result)) {
           // echo "id: " . $row["id"] . " - Name: " . $row["name"] . " - Email: " . $row["email"] . "<br>";
           $bg_class = "";
-          if($row["change_percentage"]>0){
+          if ($row["change_percentage"] > 0) {
             $bg_class = "text-bg-success";
-          }
-          elseif($row["change_percentage"]==0){
+          } elseif ($row["change_percentage"] == 0) {
             $bg_class = "text-bg-secondary";
-          }
-          else{
+          } else {
             $bg_class = "text-bg-danger";
           }
         ?>
@@ -54,12 +52,12 @@
 
                 </div>
                 <p class="card-text">
-
+                  Change : <?php echo $row['change'] . "(" . $row["change_percentage"] . ")"; ?>
                 </p>
               </div>
-              <ul class="list-group list-group-flush">
+              <!-- <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                  Change : <?php echo $row['change']."(".$row["change_percentage"].")"; ?>
+                  Change : <?php echo $row['change'] . "(" . $row["change_percentage"] . ")"; ?>
                 </li>
                 <li class="list-group-item">
                   Volume (Shares) : <?php echo $row['volume (shares)']; ?>
@@ -67,7 +65,7 @@
                 <li class="list-group-item">
                   Value (kTHB) : <?php echo $row['value (kTHB)']; ?>
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
       <?php
@@ -82,6 +80,13 @@
   </div>
   <?php render_footer("STOCK"); ?>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script>
+    var iso = new Isotope('#stock-gridview', {
+      // options
+      itemSelector: '.col',
+      layoutMode: 'fitRows'
+    });
+  </script>
 </body>
 
 </html>
