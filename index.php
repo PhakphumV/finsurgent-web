@@ -31,12 +31,12 @@
       <header class="d-flex justify-content-center py-3">
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+            <a href="index.php" class="nav-link active" aria-current="page">Home</a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">STOCK</a></li>
-          <li class="nav-item"><a class="nav-link">TAX</a></li>
-          <li class="nav-item"><a class="nav-link">SAVING</a></li>
-          <li class="nav-item"><a class="nav-link">FUND</a></li>
+          <li class="nav-item"><a href="stock.php" class="nav-link">STOCK</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary">TAX</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary">SAVING</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary">FUND</a></li>
         </ul>
       </header>
     </div>
