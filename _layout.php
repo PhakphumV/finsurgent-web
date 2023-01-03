@@ -1,7 +1,36 @@
 <?php
+$menu_list = array(
+  array(
+    'label' => "Home",
+    'link'  => 'index.php',
+    'classes' => []
+  ),
+  array(
+    'label' => "STOCK",
+    'link'  => 'stock.php',
+    'classes' => []
+  ),
+  array(
+    'label' => "TAX",
+    'link'  => '#',
+    'classes' => ["text-muted"]
+  ),
+  array(
+    'label' => "SAVING",
+    'link'  => '#',
+    'classes' => ["text-muted"]
+  ),
+  array(
+    'label' => "FUND",
+    'link'  => '#',
+    'classes' => ["text-muted"]
+  )
+);
+
 function render_head_tag()
 {
 ?>
+
   <head>
     <meta charset="utf-8" />
     <title></title>
@@ -33,35 +62,29 @@ function render_head_tag()
 <?php
 }
 
+function render_header($current_page = "Home")
+{
+  global $menu_list;
+?>
+  <div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <?php foreach ($menu_list as $menu) : ?>
+          <li class="nav-item">
+            <a href="<?php echo $menu["link"] ?>" class="nav-link <?php echo implode(" ", $classes); ?>" aria-current="page">
+            <?php echo $menu["label"]; ?>
+            </a>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+    </header>
+  </div>
+<?php
+}
+
 function render_footer($current_page = "Home")
 {
-  $menu_list = array(
-    array(
-      'label' => "Home",
-      'link'  => 'index.php',
-      'classes' => []
-    ),
-    array(
-      'label' => "STOCK",
-      'link'  => 'stock.php',
-      'classes' => []
-    ),
-    array(
-      'label' => "TAX",
-      'link'  => '#',
-      'classes' => ["text-muted"]
-    ),
-    array(
-      'label' => "SAVING",
-      'link'  => '#',
-      'classes' => ["text-muted"]
-    ),
-    array(
-      'label' => "FUND",
-      'link'  => '#',
-      'classes' => ["text-muted"]
-    )
-  )
+  global $menu_list;
 
 ?>
   <div class="container">
