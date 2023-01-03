@@ -52,7 +52,7 @@
 
                 </div>
                 <p class="card-text">
-                  CNG : <?php echo $row['change'] . "(" . $row["change_percentage"] . ")"; ?>
+                  CNG : <?php echo $row['change'] . "(" . $row["change_percentage"] . ")%"; ?>
                 </p>
               </div>
               <!-- <ul class="list-group list-group-flush">
