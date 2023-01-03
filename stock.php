@@ -13,7 +13,7 @@
   // Connecting to DB
 
   $db_host = $_ENV['FSG_DB_HOST'];
-  echo $db_host;
+  echo "DB Host : ".$db_host;
   $db_username = $_ENV['FSG_DB_USER'];
   $db_password = $_ENV['FSG_DB_PASS'];
   $db_name = $_ENV['FSG_DB_NAME'];
