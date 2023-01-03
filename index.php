@@ -39,9 +39,9 @@
           <a href="index.php" class="nav-link active" aria-current="page">Home</a>
         </li>
         <li class="nav-item"><a href="stock.php" class="nav-link">STOCK</a></li>
-        <li class="nav-item"><a class="nav-link text-secondary">TAX</a></li>
-        <li class="nav-item"><a class="nav-link text-secondary">SAVING</a></li>
-        <li class="nav-item"><a class="nav-link text-secondary">FUND</a></li>
+        <li class="nav-item"><a class="nav-link text-muted">TAX</a></li>
+        <li class="nav-item"><a class="nav-link text-muted">SAVING</a></li>
+        <li class="nav-item"><a class="nav-link text-muted">FUND</a></li>
       </ul>
     </header>
   </div>
@@ -56,23 +56,23 @@
           เครื่องมือการเงินสำหรับคนตัวเล็ก
         </h1>
         <p class="lead">
-          Quickly design and customize responsive mobile-first sites with
-          Bootstrap, the world’s most popular front-end open source toolkit,
-          featuring Sass variables and mixins, responsive grid system,
-          extensive prebuilt components, and powerful JavaScript plugins.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Ut volutpat elit diam, hendrerit euismod enim efficitur eu. 
+          Proin facilisis a metus non posuere. Fusce vitae diam sapien. 
         </p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-            Primary
+            OK
           </button>
           <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-            Default
+            ???
           </button>
         </div>
       </div>
     </div>
   </div>
 
+  <!--
   <div class="container px-4 py-5" id="icon-grid">
     <h2 class="pb-2 border-bottom">Icon grid</h2>
 
@@ -221,24 +221,24 @@
       </div>
     </div>
   </div>
-
+  -->
   <div class="container">
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">Home</a>
+          <a href="index.php" class="nav-link px-2">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">Features</a>
+          <a href="stock.php" class="nav-link px-2">STOCK</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+          <a href="#" class="nav-link px-2 text-muted">TAX</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+          <a href="#" class="nav-link px-2 text-muted">SAVING</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">About</a>
+          <a href="#" class="nav-link px-2 text-muted">FUND</a>
         </li>
       </ul>
       <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
