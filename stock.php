@@ -55,7 +55,7 @@
           <a href="index.php" class="nav-link px-2">Home</a>
         </li>
         <li class="nav-item">
-          <a href="stock.php" class="nav-link px-2">STOCK</a>
+          <a href="stock.php" class="nav-link active px-2">STOCK</a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link px-2 text-muted">TAX</a>
