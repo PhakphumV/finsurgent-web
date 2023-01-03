@@ -33,9 +33,19 @@
         <?php
         while ($row = mysqli_fetch_assoc($result)) {
           // echo "id: " . $row["id"] . " - Name: " . $row["name"] . " - Email: " . $row["email"] . "<br>";
+          $bg_class = "";
+          if($row["change_percentage"]>0){
+            $bg_class = "text-bg-success";
+          }
+          elseif($row["change_percentage"]==0){
+            $bg_class = "text-bg-secondary";
+          }
+          else{
+            $bg_class = "text-bg-danger";
+          }
         ?>
           <div class="col">
-            <div class="card text-center">
+            <div class="card text-center <?php echo $bg_class; ?>">
               <div class="card-body">
                 <div class="card-title">
                   <?php echo $row['symbol']; ?>
