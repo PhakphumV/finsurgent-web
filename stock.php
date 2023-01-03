@@ -12,11 +12,11 @@
   <?php
   // Connecting to DB
 
-  $db_host = $_ENV['FSG_DB_HOST'];
+  $db_host = getenv('FSG_DB_HOST');
   echo "DB Host : ".$db_host;
-  $db_username = $_ENV['FSG_DB_USER'];
-  $db_password = $_ENV['FSG_DB_PASS'];
-  $db_name = $_ENV['FSG_DB_NAME'];
+  // $db_username = $_ENV['FSG_DB_USER'];
+  // $db_password = $_ENV['FSG_DB_PASS'];
+  // $db_name = $_ENV['FSG_DB_NAME'];
 
   // $db_conn = mysqli_connect($db_host, $db_username, $db_password, $db_name);
 
