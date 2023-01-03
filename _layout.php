@@ -1,4 +1,10 @@
 <?php
+if (realpath(__FILE__) == realpath($_SERVER['SCRIPT_FILENAME'])) {
+  header('HTTP/1.0 403 Forbidden', TRUE, 403);
+  die(header('location: /index.php'));
+}
+
+
 $menu_list = array(
   array(
     'label' => "Home",
@@ -72,7 +78,7 @@ function render_header($current_page = "Home")
         <?php foreach ($menu_list as $menu) : ?>
           <li class="nav-item">
             <a href="<?php echo $menu["link"] ?>" class="nav-link <?php echo implode(" ", $classes); ?>" aria-current="page">
-            <?php echo $menu["label"]; ?>
+              <?php echo $menu["label"]; ?>
             </a>
           </li>
         <?php endforeach; ?>
