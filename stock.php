@@ -25,7 +25,7 @@
         echo "Cannon connect db";
       }
       $query = "SELECT * FROM u549428984_python.mkd_data_current";
-      $result = mysqli_query($conn, $query);
+      $result = mysqli_query($db_conn, $query);
 
       if (mysqli_num_rows($result) > 0) {
       ?>
