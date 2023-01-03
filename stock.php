@@ -10,7 +10,7 @@
   <?php render_header("STOCK"); ?>
 
   <div class="container text-center">
-    <div id="stock-gridview" class="row row-cols-5 g-0">
+    <div id="stock-gridview" class="row row-cols-6 g-0">
       <?php
       // Connecting to DB
 
@@ -52,7 +52,7 @@
 
                 </div>
                 <p class="card-text">
-                  Change : <?php echo $row['change'] . "(" . $row["change_percentage"] . ")"; ?>
+                  CNG : <?php echo $row['change'] . "(" . $row["change_percentage"] . ")"; ?>
                 </p>
               </div>
               <!-- <ul class="list-group list-group-flush">
