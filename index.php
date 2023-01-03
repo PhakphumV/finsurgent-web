@@ -241,7 +241,7 @@
           <a href="#" class="nav-link px-2 text-muted">FUND</a>
         </li>
       </ul>
-      <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+      <p class="text-center text-muted">&copy; 2023 Finsurgent</p>
     </footer>
   </div>
 
