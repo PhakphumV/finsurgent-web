@@ -77,6 +77,12 @@ function render_header($current_page = "Home")
       <ul class="nav nav-pills">
         <?php foreach ($menu_list as $menu) : ?>
           <li class="nav-item">
+            <?php
+            $classes = $menu['classes'];
+            if ($menu['label'] == $current_page) {
+              $classes[] = "active";
+            }
+            ?>
             <a href="<?php echo $menu["link"] ?>" class="nav-link <?php echo implode(" ", $classes); ?>" aria-current="page">
               <?php echo $menu["label"]; ?>
             </a>
