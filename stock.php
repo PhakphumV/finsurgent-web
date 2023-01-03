@@ -35,7 +35,30 @@
           // echo "id: " . $row["id"] . " - Name: " . $row["name"] . " - Email: " . $row["email"] . "<br>";
         ?>
           <div class="col">
-            <?php echo $row['symbol']; ?>
+            <div class="card text-center">
+              <div class="card-body">
+                <div class="card-title">
+                  <?php echo $row['symbol']; ?>
+                </div>
+                <div class="card-subtitle">
+
+                </div>
+                <p class="card-text">
+
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Change : <?php echo $row['change']."(".$row["change_percentage"].")"; ?>
+                </li>
+                <li class="list-group-item">
+                  Volume (Shares) : <?php echo $row['volume (shares)']; ?>
+                </li>
+                <li class="list-group-item">
+                  Value (kTHB) : <?php echo $row['value (kTHB)']; ?>
+                </li>
+              </ul>
+            </div>
           </div>
       <?php
         }
