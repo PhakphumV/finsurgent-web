@@ -51,11 +51,21 @@
                   <?php echo $row['symbol']; ?>
                 </div>
                 <div class="card-subtitle">
-                  <?php echo $row['offer'] . "/" . $row['bid']; ?>
+                  <?php echo $row['offer']; ?>
                 </div>
                 <p class="card-text">
-                  CNG : <?php echo $row['change'] . "(" . $row["change_percentage"] . "%)"; ?>
-
+                  <span>
+                    CNG : <?php echo $row['change'] . "(" . $row["change_percentage"] . "%)"; ?>
+                  </span>
+                  <span>
+                    P/E : <?php echo $row['pe']; ?>
+                  </span>
+                  <span>
+                    P/BV : <?php echo $row['pbv']; ?>
+                  </span>
+                  <span>
+                    EPS : <?php echo $row['eps']; ?>
+                  </span>
                 </p>
               </div>
             </div>
