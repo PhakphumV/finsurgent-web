@@ -10,7 +10,7 @@
   <?php render_header("STOCK"); ?>
 
   <div class="container text-center">
-    <div id="stock-gridview" class="row row-cols-6 g-0">
+    <div id="stock-gridview" class="row row-cols-5 row-cols-sm-2 row-cols-md-4 g-0">
       <?php
       // Connecting to DB
 
@@ -73,7 +73,7 @@
   </div>
   <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col text-center">
           Last update : <?php echo date("Y/m/d H:i:s",$last_update); ?>
         </div>
       </div>
