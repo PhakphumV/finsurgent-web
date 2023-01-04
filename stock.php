@@ -27,6 +27,8 @@
       $query = "SELECT * FROM u549428984_python.mkd_data_current";
       $result = mysqli_query($db_conn, $query);
 
+      $last_update = "";
+
       if (mysqli_num_rows($result) > 0) {
       ?>
 
@@ -53,22 +55,13 @@
                 </div>
                 <p class="card-text">
                   CNG : <?php echo $row['change'] . "(" . $row["change_percentage"] . "%)"; ?>
+                  
                 </p>
               </div>
-              <!-- <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  Change : <?php echo $row['change'] . "(" . $row["change_percentage"] . ")"; ?>
-                </li>
-                <li class="list-group-item">
-                  Volume (Shares) : <?php echo $row['volume (shares)']; ?>
-                </li>
-                <li class="list-group-item">
-                  Value (kTHB) : <?php echo $row['value (kTHB)']; ?>
-                </li>
-              </ul> -->
             </div>
           </div>
       <?php
+        $last_update = $row['timestamp'];
         }
       } else {
         echo "No data found in the database.";
@@ -77,6 +70,13 @@
       mysqli_close($db_conn);
       ?>
     </div>
+  </div>
+  <div class="container">
+      <div class="row">
+        <div class="col">
+          Last update : <?php echo date("Y/m/d H:i:s",$last_update) ?>
+        </div>
+      </div>
   </div>
   <?php render_footer("STOCK"); ?>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
