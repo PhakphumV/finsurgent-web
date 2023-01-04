@@ -16,7 +16,7 @@
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">
-          Finsurgent Introduction
+          รวมเครื่องมือการเงินสำหรับคนตัวเล็ก
         </h1>
         <p class="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
