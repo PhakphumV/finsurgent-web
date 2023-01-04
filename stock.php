@@ -51,7 +51,7 @@
                   <?php echo $row['symbol']; ?>
                 </div>
                 <div class="card-subtitle">
-
+                  <?php echo $row['offer']."/".$row['bid']; ?>
                 </div>
                 <p class="card-text">
                   CNG : <?php echo $row['change'] . "(" . $row["change_percentage"] . "%)"; ?>
