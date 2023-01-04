@@ -74,7 +74,7 @@
   <div class="container">
       <div class="row">
         <div class="col">
-          Last update : <?php echo date("Y/m/d H:i:s",$last_update) ?>
+          Last update : <?php echo date("Y/m/d H:i:s",$last_update); ?>
         </div>
       </div>
   </div>
