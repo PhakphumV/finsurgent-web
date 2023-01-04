@@ -51,17 +51,17 @@
                   <?php echo $row['symbol']; ?>
                 </div>
                 <div class="card-subtitle">
-                  <?php echo $row['offer']."/".$row['bid']; ?>
+                  <?php echo $row['offer'] . "/" . $row['bid']; ?>
                 </div>
                 <p class="card-text">
                   CNG : <?php echo $row['change'] . "(" . $row["change_percentage"] . "%)"; ?>
-                  
+
                 </p>
               </div>
             </div>
           </div>
       <?php
-        $last_update = $row['timestamp'];
+          $last_update = $row['timestamp'];
         }
       } else {
         echo "No data found in the database.";
@@ -72,16 +72,16 @@
     </div>
   </div>
   <div class="container">
-      <div class="row">
-        <div class="col text-center">
-          Last update : <?php echo date("Y/m/d H:i:s",$last_update); ?>
-        </div>
+    <div class="row">
+      <div class="col text-center">
+        Last update : <?php echo date("Y/m/d H:i:s", $last_update); ?>
       </div>
+    </div>
   </div>
   <?php render_footer("STOCK"); ?>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script>
-    var iso = new Isotope('#stock-gridview', {
+    $('#stock-gridview').isotope({
       // options
       itemSelector: '.col',
       layoutMode: 'fitRows'
