@@ -1,3 +1,10 @@
+# Finsurgent
+
+เว็บรวมเครื่องมือเรื่องการเงินสำหรับคนไทย ในรูปแบบของ Open Source
+
+
+
+
 ## Setup
 
 ### Create .htaccess file for env vars
